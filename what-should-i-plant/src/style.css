@@ -1,0 +1,78 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+#app {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin: none;
+}
+
+body {
+  margin: 0;
+}
+
+.searchBox {
+  border: 1px solid #ccc; 
+  border-radius: 4px;
+  padding: 8px
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  background-color: #f39060;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+button:hover {
+  border-color: #1f005c;
+}
+
+.descrip {
+  padding: 30px;
+  background: linear-gradient(
+    135deg,
+    #004d00,
+    #117a00,
+    #21a500,
+    #32d200,
+    #68ff33, 
+    #8bff66,
+    #adf999,
+    #d1ffcc
+  );
+  --mask: radial-gradient(30px at bottom,#0000 97%,#000) 50% / 55.5px 100%;
+  -webkit-mask: var(--mask);
+          mask: var(--mask);
+}
+
+.inverse {  
+  position: absolute; 
+  bottom: 0; 
+  width: 100%;
+  padding-top: 60px;
+  padding-bottom: 10px;
+  background: linear-gradient(
+    135deg,
+    #d1ffcc,
+    #adf999,
+    #8bff66,
+    #68ff33,
+    #32d200,
+    #21a500,
+    #117a00,
+    #004d00 
+  );
+  --mask: radial-gradient(30px at top,#0000 97%,#000) 50% / 55.5px 100%;
+  -webkit-mask: var(--mask);
+          mask: var(--mask);
+}
