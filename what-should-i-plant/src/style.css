@@ -18,27 +18,9 @@ body {
   margin: 0;
 }
 
-.searchBox {
-  border: 1px solid #ccc; 
-  border-radius: 4px;
-  padding: 8px
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  background-color: #f39060;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-
-button:hover {
-  border-color: #1f005c;
-}
-
 .descrip {
   padding: 30px;
+  height: fit-content;
   background: linear-gradient(
     135deg,
     #004d00,
@@ -49,15 +31,70 @@ button:hover {
     #8bff66,
     #adf999,
     #d1ffcc
-  );
-  --mask: radial-gradient(30px at bottom,#0000 97%,#000) 50% / 55.5px 100%;
-  -webkit-mask: var(--mask);
-          mask: var(--mask);
+    );
+    --mask: radial-gradient(30px at bottom,#0000 97%,#000) 50% / 55.5px 100%;
+    -webkit-mask: var(--mask);
+    mask: var(--mask);
+}
+
+.welcome {
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+  
+nav * {
+    padding: 8px 16px;
+    margin: 5px;
+    background-color: #21a500;
+    border: #004d00 solid 1px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.hardiness {
+    height: 400px;
+}
+
+.conditions {
+  margin: auto;
+  text-align: left;
+  width: 60%;
+}
+
+.mapExplanation {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+.hardinessZone,
+.plantSearch {
+    text-align: center;
+    flex-direction: column;
+    width: min-content;
+    margin: auto;
+}
+
+.searchBox {
+    border: 1px solid #ccc; 
+    border-radius: 4px;
+    padding: 8px
+}
+  
+button {
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 8px 16px;
+    background-color: #f39060;
+    cursor: pointer;
+    transition: border-color 0.25s;
+}
+  
+button:hover {
+    border-color: #1f005c;
 }
 
 .inverse {  
-  position: absolute; 
-  bottom: 0; 
   width: 100%;
   padding-top: 60px;
   padding-bottom: 10px;

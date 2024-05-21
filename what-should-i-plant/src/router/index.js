@@ -6,7 +6,7 @@ const router = createRouter({
         {
             path: '/',
             name: 'home',
-            component: () => import('../views/HomeView.vue')
+            component: () => import('../views/HomePage.vue')
         },
         {
             path: '/Explanation',
@@ -16,7 +16,12 @@ const router = createRouter({
         {
             path: '/search',
             name: 'Search',
-            component: () => import('../views/SearchBox.vue')
+            component: () => import('../views/HardinessZone.vue')
+        },
+        {
+            path: '/plants',
+            name: 'Plants',
+            component: () => import('../views/MyPlants.vue')
         },
     ]
 })

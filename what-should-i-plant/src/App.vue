@@ -5,22 +5,21 @@
       <nav>
         <RouterLink to="/explanation">Explanation</RouterLink>
         <RouterLink to="/search">Plant Search</RouterLink>
+        <RouterLink to="/plants">My Plants</RouterLink>
       </nav>
     </div>
   </header>
   <body>
     <RouterView />
   </body>
-  <footer>
-    <div class="inverse">Thank You for Visiting.</div>
-  </footer>
+  <FooterBlock />
 </template>
 
 <script>
-import { RouterLink, RouterView } from 'vue-router'
+import FooterBlock from './components/FooterBlock.vue'
 
 export default {
   name: 'App',
-  components: {}
+  components: { FooterBlock }
 }
 </script>
